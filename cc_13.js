@@ -37,4 +37,8 @@ function highlightEmployeeCards() {
       card.classList.add('highlight');
     });
   }
+  // Task 4: Log clicks on the employee container (except Remove button clicks)
+document.getElementById('employeeContainer').addEventListener('click', function(event) {
+    console.log('Employee card clicked:', event.target);
+  });
   
