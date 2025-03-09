@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
+        header, footer { background: #eee; padding: 10px; text-align: center; }
+        main { margin: 20px 0; }
+        /* Employee card style */
+        .employee-card {
+            padding: 10px; margin: 10px;
+            background: #f4f4f4; border: 1px solid #ccc;
+            border-radius: 5px; cursor: pointer;
+        }
+        /* Highlight style */
+        .highlight { border: 2px solid red; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Employee Dashboard</h1>
+        <p>Manage employees here.</p>
+    </header>
+    <main>
+        <!-- Container for employee cards -->
+        <div id="employeeContainer"></div>
+        <!-- Button to test adding an employee -->
+        <button onclick="createEmployeeCard('John Doe', 'Software Engineer')">Add Employee</button>
+        <!-- Button to test bulk update -->
+        <button onclick="highlightEmployeeCards()">Highlight Employees</button>
+    </main>
+    <footer>
+        <p>© 2025 Company.</p>
+    </footer>
+    <script src="cc_13.js"></script>
+</body>
+</html>
