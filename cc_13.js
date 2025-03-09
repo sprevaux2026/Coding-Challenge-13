@@ -29,4 +29,12 @@ function createEmployeeCard(name, position) {
     // Add the card to the container
     document.getElementById('employeeContainer').appendChild(card);
   }
+  // Task 3: Highlight All Employee Cards
+function highlightEmployeeCards() {
+    const cards = document.querySelectorAll('.employee-card');
+    // Loop through each card and add the 'highlight' class
+    Array.from(cards).forEach(card => {
+      card.classList.add('highlight');
+    });
+  }
   
